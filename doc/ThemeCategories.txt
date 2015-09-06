@@ -1,0 +1,8 @@
+Theme:
+
+A = Normal function keys
+B = Digits
+C = Clear button (usually red)
+D = 2nd button (yellow, e.g.)
+E = Equal sign (green)
+F = Default/Blank ALWAYS

@@ -1,0 +1,8 @@
+
+1. INITIALIZE NPM
+==> cmd ==> npm init
+OR
+==> rename "package-template.json" to "package.json"
+
+2. INSTALL PLUGINS
+==> cmd ==> install.bat

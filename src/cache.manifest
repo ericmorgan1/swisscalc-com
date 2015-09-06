@@ -1,0 +1,58 @@
+CACHE MANIFEST
+
+# Version: 20150827.001
+
+CACHE:
+
+# Pages...
+index.html
+faq.html
+feedback.html
+
+# CSS...
+css/summer.css
+css/summer.min.css
+css/spring.css
+css/spring.min.css
+css/fall.css
+css/fall.min.css
+css/winter.css
+css/winter.min.css
+css/jquery.mobile.icons.min.css
+css/jquery.mobile.structure-1.4.2.min.css
+css/materialize.css
+css/swisscalc.calc.financial.css
+css/swisscalc.calc.loan.css
+css/swisscalc.calc.scientific.css
+css/swisscalc.calc.tip.css
+css/swisscalc.jquery.override.css
+css/images/icons-png/grid-white.png
+css/images/icons-png/grid-black.png
+css/images/icons-png/gear-white.png
+css/images/icons-png/gear-black.png
+css/images/icons-png/star-white.png
+css/images/icons-png/star-black.png
+css/images/icons-png/delete-white.png
+css/images/icons-png/delete-black.png
+
+# Images...
+swisscalc-icon-512.jpg
+
+# Javascript...
+js/ext/jquery.mobile-1.4.2.min.js
+js/ext/jquery-1.11.0.min.js
+js/ext/waves.materialize.js
+js/swisscalc.calc.calculator.js
+js/swisscalc.calc.loanCalculator.js
+js/swisscalc.calc.tipCalculator.js
+js/swisscalc.display.fixedPointDisplay.js
+js/swisscalc.display.memoryDisplay.js
+js/swisscalc.display.numericDisplay.js
+js/swisscalc.lib.format.js
+js/swisscalc.lib.operator.js
+js/swisscalc.lib.operatorCache.js
+js/swisscalc.lib.shuntingYard.js
+js/gui/swisscalc.gui.loanCalculator.js
+js/gui/swisscalc.gui.scientificCalculator.js
+js/gui/swisscalc.gui.tipCalculator.js
+js/gui/swisscalc.gui.main.js

@@ -1,0 +1,48 @@
+/* Header portion with inputs */
+div.TipHeaderPortion
+{
+	position:		absolute; 
+	width:			100%; 
+	height:			160px
+}
+
+/* Keypad that fills screen */
+div.TipKeypadPortrait
+{
+	height:				100% 		!important; 	/* Fill height */
+	width:				100% 		!important; 	/* Fill width */
+	padding-top:		160px 		!important; 	/* Leave room for NumericDisplay (add 20px to height) */
+}
+
+/* Keypad button */
+div.TipKeypadPortrait button
+{
+	font-size: 1.25em;								/* Increase font-size a little. Don't worry about resizing buttons */
+}
+
+div.TipKeypadLandscape
+{
+	height:				100% 		!important; 	/* Fill height */
+	width:				50% 		!important; 	/* Fill width */
+}
+
+div.TipTextBoxLabel .Label
+{
+	text-align:			right		!important;
+	float:				left		!important;
+	height:				50px		!important;
+	line-height:		50px		!important;
+}
+
+div.TipTextBoxLabel .TextBox
+{
+	margin-left:		10px		!important;
+	float:				left		!important;
+}
+
+div.TipTextBoxLabel .NewLine
+{
+	clear:			both			!important;
+	height:			0px				!important;
+	width:			0px				!important;
+}

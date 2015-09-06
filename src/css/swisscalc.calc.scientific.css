@@ -1,0 +1,56 @@
+/* Numeric display */
+div.ScientificNumericDisplayPortrait
+{
+	position: 			absolute 	!important;		/* Absolute position */	
+	width:				100% 		!important;		/* Fill width */
+}
+
+/* Numeric display */
+div.ScientificNumericDisplayPortrait input[type="text"]
+{
+	height: 			50px		!important;		/* Specify height of display. Adjust FillGrid */
+	font-size: 			22px		!important;		/* Increase font to improve readability */
+}
+
+/* Keypad that fills screen */
+div.ScientificKeypadPortrait
+{
+	height:				100% 		!important; 	/* Fill height */
+	width:				100% 		!important; 	/* Fill width */
+	padding-top:		70px 		!important; 	/* Leave room for NumericDisplay (add 20px to height) */
+	/*padding-bottom:		60px 		!important;		/* Leave 60px for Footer */
+}
+
+/* Keypad button */
+div.ScientificKeypadPortrait button
+{
+	font-size: 1.25em;								/* Increase font-size a little. Don't worry about resizing buttons */
+}
+
+/* Numeric display */
+div.ScientificNumericDisplayLandscape
+{
+	position: 			absolute 	!important;		/* Absolute position */	
+	width:				100% 		!important;		/* Fill width */
+}
+
+/* Numeric display */
+div.ScientificNumericDisplayLandscape[type="text"]
+{
+	height:				30px		!important;		/* Specify height of display. Adjust FillGrid */
+	font-size:			16px		!important;		/* Increase font size to improve readability */
+}
+
+/* Keypad that fills 100% height / 50% width */
+div.ScientificKeypadLandscape
+{
+	height:				100% 		!important; 	/* Fill height */
+	width:				50% 		!important; 	/* Fill width */
+	padding-top:		50px 		!important; 	/* Leave room for Main Display (add 20px to height) */
+}
+
+/* Keypad button */
+div.ScientificKeypadLandscape button
+{
+	font-size: 0.80em;								/* Increase font-size a little. Don't worry about resizing buttons */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html manifest="./cache.manifest">
+	<head>
+		<title>Feedback</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" /> 						<!-- Full screen mode for iOS -->
+		<link rel="apple-touch-icon" href="swisscalc-icon-512.jpg" />					    <!-- Icon for iOS -->
+		<link title="theme" rel="stylesheet" href="css/spring.min.css" />				<!-- Color theme -->
+		
+		<!-- build:css css/styles.css -->
+		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />				<!-- Icons -->
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css" /> 		<!-- jQuery Mobile style -->
+		<link rel="stylesheet" href="css/swisscalc.jquery.override.css" /> 				<!-- Custom style override -->
+		<link rel="stylesheet" href="css/swisscalc.calc.scientific.css" />              <!-- Custom style override -->
+		<link rel="stylesheet" href="css/swisscalc.calc.tip.css" />                     <!-- Custom style override -->
+		<link rel="stylesheet" href="css/swisscalc.calc.loan.css" />                    <!-- Custom style override -->
+		<link rel="stylesheet" href="css/swisscalc.calc.financial.css" /> 				<!-- Custom style override -->
+		<!-- endbuild -->
+		
+		<script src="js/ext/jquery-1.11.0.min.js"></script>								<!-- jQuery -->
+		<script src="js/ext/jquery.mobile-1.4.2.min.js"></script>						<!-- jQuery Mobile -->
+		<script src="js/gui/swisscalc.gui.main.js"></script>
+		
+		<script type="text/javascript">
+			window.onload = function() {
+				// Initialize theme and menu...
+				var themeName = swisscalc.gui.main.loadTheme();
+				if (themeName != "") swisscalc.gui.main.setTheme(themeName);
+			};
+		</script>
+	</head>
+	
+<body>
+    <div data-role="page">
+ 
+        <div data-role="header">
+            <h1>Feedback</h1>
+        </div>
+ 
+        <div data-role="content">
+			<a href="index.html" data-role="button" data-inline="true" data-icon="arrow-l" data-iconpos="left" rel="external">Back</a>
+		
+			<div>Content</div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+/* Shrink for desktop devices */
+/*
+@media only screen and (min-width: 600px) 
+{
+    .ui-page 
+        {
+        width:      720px       !important;
+        margin:     0 auto      !important;
+        position:   relative    !important;
+    }
+}
+*/
+
+* { text-overflow: clip !important; }
+
+/* Overall HTML styles */
+html
+{
+	-ms-touch-action: 	manipulation;				/* Optimize Windows Phone */
+    touch-action: 		manipulation;				/* Optimize Windows Phone */
+}
+
+/* Style for a FillGrid with 4 rows */
+div.FourRows .ui-block-a { height:25% !important; }
+div.FourRows .ui-block-b { height:25% !important; }
+div.FourRows .ui-block-c { height:25% !important; }
+div.FourRows .ui-block-d { height:25% !important; }
+div.FourRows .ui-block-e { height:25% !important; }
+
+/* Style for a FillGrid with 5 rows */
+div.FiveRows .ui-block-a { height:20% !important; }
+div.FiveRows .ui-block-b { height:20% !important; }
+div.FiveRows .ui-block-c { height:20% !important; }
+div.FiveRows .ui-block-d { height:20% !important; }
+div.FiveRows .ui-block-e { height:20% !important; }
+
+/* Style for a FillGrid with 6 rows */
+div.SixRows .ui-block-a { height:16.66% !important; }
+div.SixRows .ui-block-b { height:16.66% !important; }
+div.SixRows .ui-block-c { height:16.66% !important; }
+div.SixRows .ui-block-d { height:16.66% !important; }
+div.SixRows .ui-block-e { height:16.66% !important; }
+
+/* Eliminate padding */
+div.NoPadding { padding:0px !important; }
+div.NoScroll   { overflow:hidden !important; }
+
+/* Styles for the NumericDisplay of a calculator */
+div.NumericDisplay input[type="text"]
+{
+	text-align: 		right 		!important;		/* Right-align text */
+}
+
+/* Styles for the Keypad */
+div.Keypad
+{
+	position:			absolute 	!important; 	/* Absolute positioning */
+	-moz-box-sizing:	border-box 	!important; 	/* Use instead of CSS3 Calc(100% - 60px) */
+	box-sizing:			border-box 	!important;		/* Use instead of CSS3 Calc(100% - 60px) */
+	/*overflow:			hidden 		!important;		/* Hide scroll bar */
+}
+
+/* Keypad buttons */
+div.Keypad button
+{
+	-moz-box-shadow: 	none 		!important;		/* Remove glow/shadow */
+    -webkit-box-shadow: none 		!important;		/* Remove glow/shadow */
+    box-shadow: 		none 		!important;		/* Remove glow/shadow */
+	
+	margin: 			0 0 0 0 	!important;		/* Remove margin to flush buttons... */
+	border-radius: 		0 0 0 0 	!important;		/* Remove rounded corners */
+	height: 			100% 		!important;		/* Set button height to 100% */
+}
+
+/* Footer/NavBar menu */
+div.FooterMenu
+{
+	height:				60px 		!important;	/* Footer height. Adjust FillGrid */
+}
+
+/* Settings side bar */
+div.SettingsSideBar
+{
+	
+}
