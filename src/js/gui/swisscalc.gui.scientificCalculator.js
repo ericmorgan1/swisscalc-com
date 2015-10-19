@@ -254,7 +254,7 @@ swisscalc.gui.scientificCalculator.prototype.initEventsLandscape = function() {
 		that.update();
 	});
 	
-	$(document).off("tap", "#pageScientificLandscape #btnSevenLS").on("tap", "#pageScientificLandscape #pageScientificLandscape #btnSevenLS", function(event) {
+	$(document).off("tap", "#pageScientificLandscape #btnSevenLS").on("tap", " #pageScientificLandscape #btnSevenLS", function(event) {
 		event.preventDefault();
 		that.btnSeven_Click();
 		that.update();
