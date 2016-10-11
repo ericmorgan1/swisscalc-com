@@ -8,7 +8,7 @@ swisscalc.gui = swisscalc.gui || {};
 swisscalc.gui.main = function() {};
 
 // Returns the version. SHOULD BE SYNCED WITH cache.manifest
-swisscalc.gui.main.getVersion = function() { return "20150827.001"; };
+swisscalc.gui.main.getVersion = function() { return "20161011.001"; };
 
 // Switches the CSS theme.
 swisscalc.gui.main.setTheme = function(themeName) {
@@ -64,49 +64,6 @@ swisscalc.gui.main.changeTheme = function(theme) {
 	$('#panelSettingsAll').panel('close');
 };
 
-// Finds and returns the "materialize.css" file...
-swisscalc.gui.main.getWavesCss = function() {
-	var cssFiles = document.querySelectorAll("link[rel='stylesheet']");
-	for (var i = 0; i < cssFiles.length; i++)
-		if (cssFiles[i].href.indexOf("materialize.css") >= 0)
-			return cssFiles[i];	
-	return null;
-};
-
-// Returns true if the Waves CSS is disabled...
-swisscalc.gui.main.isWavesDisabled = function() {
-	var cssWaves = swisscalc.gui.main.getWavesCss();
-	var isDisabled = cssWaves.getAttribute("disabled");
-	if (isDisabled == null) isDisabled = false;
-	return isDisabled;
-};
-
-// Sets the Waves CSS to enabled/disabled...
-swisscalc.gui.main.setWavesDisabled = function(isDisabled) {
-	var cssWaves = swisscalc.gui.main.getWavesCss();
-	if (isDisabled) { cssWaves.setAttribute("disabled", "disabled"); } 
-	else { cssWaves.removeAttribute("disabled"); }
-};
-
-// Toggles the "materialize.css" file on/off
-swisscalc.gui.main.toggleWavesDisabled = function() {
-	var isDisabled = swisscalc.gui.main.isWavesDisabled();
-	swisscalc.gui.main.setWavesDisabled(!isDisabled);
-	swisscalc.gui.main.saveWavesDisabled(!isDisabled);
-};
-
-// Saves IsWavesDisabled to local storage
-swisscalc.gui.main.saveWavesDisabled = function(isDisabled) {
-	try { localStorage.IsWavesDisabled = isDisabled; }
-	catch(err) { }
-};
-
-// Returns the IsWavesDisabled saved in local storage
-swisscalc.gui.main.loadWavesDisabled = function() {
-	try { var isDisabled = localStorage.IsWavesDisabled; return isDisabled === "true"; }
-	catch(err) { return ""; }	
-};
-
 // Does a page change to the given href with the given transition
 swisscalc.gui.main.changePage = function(href, transition) {
 	$.mobile.changePage(href, { transition: transition });
@@ -155,10 +112,6 @@ $(document).ready(function() {
 	// Initialize the theme...
 	var themeName = swisscalc.gui.main.loadTheme();
 	if (themeName != "") swisscalc.gui.main.setTheme(themeName);
-	
-	// Initialize WavesDisabled...
-	var isWavesDisabled = swisscalc.gui.main.loadWavesDisabled();
-	swisscalc.gui.main.setWavesDisabled(isWavesDisabled);
 })();
 
 // Initialize settings panel...
